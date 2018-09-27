@@ -2,11 +2,13 @@
 
 ### Saturday, September 29, 2018, 9:30am - 11:30am
 
+
 ## Instructors
 
 - Claire Trivisonno
 - Fatima Umanzor
 - Derek Warren
+
 
 ## Getting Started
 
@@ -27,6 +29,7 @@ $ npm start
 5. Navigate to http://localhost:3000
 
 When you first start your local development server, the page should be blank. But don't worry, we will fix that!
+
 
 ## Resources
 1. [HTML Tutorials](https://www.w3schools.com/html/)
