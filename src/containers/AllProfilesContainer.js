@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Row, Col, Thumbnail, Button } from 'react-bootstrap'
+import { Grid, Row, Col, Thumbnail, Button, Image } from 'react-bootstrap'
 
 // Hardcoded users for All Profiles page
 const users = [
@@ -35,6 +35,16 @@ class AllProfilesContainer extends Component {
         <Row>
 
           {/* ADD ALL PROFILES CREATED ABOVE HERE */}
+          <Col xs={6} md={4} lg={3}>
+          
+          <Image src="assets/images/dog-placeholder.jpg" Thumbnail />
+          <h3>FirstName LastName</h3>
+          <p>
+            <Button bsStyle="primary" onClick={() => this.props.histry('/?users=' +1)}>
+            </Button>
+          </p>
+          
+          </Col>
           
         </Row>
       </Grid>

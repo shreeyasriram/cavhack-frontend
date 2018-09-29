@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import { Grid, Row, Col, Image, PageHeader, Panel, Button } from 'react-bootstrap'
 import { AddModal } from '../components/Modal/Modal'
+import '../style.css';
 
 import { getUserProfile } from '../actions/api'
 
@@ -27,30 +28,54 @@ class MyProfileContainer extends Component {
   }
 
   // ADD FUNCTION TO HANDLE OPENING THE MODAL HERE (with "type" variable)
-  handleModalOpen(type) {}
+  handleModalOpen(type) { }
 
   // ADD FUNCTION TO HANDLE CLOSING THE MODAL HERE
-  handleModalClose() {}
+  handleModalClose() { }
 
   // ADD FUNCTION TO TRACK TEXT CHANGES HERE (with event variable)
-  handleTextChange(e) {}
+  handleTextChange(e) { }
 
   // ADD FUNCTION TO HANDLE SUBMITTING "ADD" FORM HERE
-  handleAddSubmit() {}
+  handleAddSubmit() { }
 
   render() {
     return (
       <div>
         <Grid>
           <Row className="show-grid valign-wrapper">
-            <Col xs={12} md={8} lg={4}>
+            <Col xs={5} md={2} lg={12}>
               {/* ADD PROFILE IMAGE HERE */}
+              <Image src="/assets/images/dog-placeholder.jpg" thunbnail />
             </Col>
-            <Col xs={12} md={4} lg={8}>
+            <Col xs={11} md={9} lg={11}>
               {/* ADD PAGE HEADER WITH NAME AND ABOUT ME HEADINGS HERE */}
+              <PageHeader>
+                About Us
+                <br />
+                <small>Sophia and Shreeya</small>
+             
+              </PageHeader>
+           
+          
+             <PageHeader>
+               Our Interests
+              </PageHeader>
+              <Panel className="rotate270">
+                <Panel.Body>
+                  <ul>
+                    <li>running
+                    </li>
+                    <li>soccer</li>
+                    <li>tennis</li>
+                    <li>violin</li>
+                  </ul>
+                </Panel.Body>
+              </Panel>
 
+              
               {/* ADD ABOUT ME DESCRIPTION HERE */}
-
+              <p className="About-Me"> We are Ninth Graders at Woodson High School. We both like science and History. GO CAVS!</p>
             </Col>
           </Row>
           <Row className="show-grid">
@@ -66,7 +91,7 @@ class MyProfileContainer extends Component {
 
             </Col>
           </Row>
-        </Grid>
+        </Grid> 
 
         {/* ADD MODAL HERE */}
 
